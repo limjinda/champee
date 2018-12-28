@@ -19,16 +19,16 @@ const clean = require('gulp-clean');
 const banner = [
 	'/**',
 	'/*!',
-	'Theme Name: wp-theme-prototype',
+	'Theme Name: champee',
 	'Theme URI: http://www.jindatheme.com',
 	'Author: JindaTheme',
 	'Author URI: https://www.jindatheme.com',
-	'Description: Premium responsive WordPress theme for example.com',
+	'Description: Champee, official WordPress theme that made for blog',
 	'Version: 1.0',
 	'License: GNU General Public License v2 or later',
 	'License URI: http://www.gnu.org/licenses/gpl-2.0.html',
 	'Tags: responsive',
-	'Text Domain: wp-theme-prototype',
+	'Text Domain: jindatheme',
 	'*/',
 	''
 ].join('\n');
@@ -110,7 +110,7 @@ gulp.task('images', () => {
 gulp.task('lib-scss', () => {
 	return gulp.src('').pipe(
 		shell([
-			// 'sass --style=compressed ./node_modules/bootstrap/scss/bootstrap.scss ./css/bootstrap.min.css'
+			'sass --style=compressed ./node_modules/bootstrap/scss/bootstrap.scss ./css/bootstrap.min.css'
 		])
 	);
 });
@@ -123,7 +123,7 @@ gulp.task('lib-scss', () => {
 gulp.task('lib-css', () => {
 	return gulp
 		.src([
-			// './css/bootstrap.min.css',
+			'./css/bootstrap.min.css',
 			// './node_modules/magnific-popup/dist/magnific-popup.css'
 		])
 		.pipe(concatCSS('vendor.css'))
@@ -136,11 +136,19 @@ gulp.task('lib-css', () => {
  */
 gulp.task('lib-clean', () => {
 	return gulp
-		.src(['./css/bootstrap.min.css', './css/bootstrap.min.css.map'], {
+		.src([
+				'./css/bootstrap.min.css', 
+				'./css/bootstrap.min.css.map'
+		], {
 			read: false
 		})
 		.pipe(clean());
 });
+
+gulp.task('php', () => {
+	return gulp.src([''])
+		.pipe(livereload());
+})
 
 gulp.task('watch', () => {
 	livereload.listen({ start: true });
