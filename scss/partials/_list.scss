@@ -1,0 +1,49 @@
+.post-listing {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	@media #{$sm} {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.post-item {
+		width: 100%;
+		margin: 0 0 32px 0;
+		@media #{$sm} {
+			flex: 0 0 calc( 100% / 2 - 12px);
+			margin: 0 24px 32px 0;
+		}
+		&:nth-child(2n) {
+			margin-right: 0;
+		}
+		a {
+			display: block;
+		}
+		figure {
+			margin: 0;
+			a.cover-wrapper {
+				background-color: $black;
+				border-radius: 16px;
+			}
+			img {
+				display: block;
+				margin: 0 0 16px;
+				border-radius: 16px;
+				&:hover {
+					opacity: 0.9;
+				}
+			}
+			.post-title {
+				font-weight: normal;
+				font-size: 18px;
+				line-height: 1.5;
+				margin: 0 0 4px;
+			}
+			.post-desc {
+				font-size: 14px;
+				color: $black;
+			}
+		}
+	}	
+}

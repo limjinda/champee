@@ -71,6 +71,7 @@ gulp.task('javascript', () => {
 	return gulp
 		.src([
 			'./js/vendor/modernizr-3.6.0.min.js', 
+			'./node_modules/jquery-stickit/build/jquery.stickit.min.js',
 			'./js/main.js'
 		])
 		.pipe(plumber())

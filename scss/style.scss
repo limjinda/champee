@@ -1,10 +1,15 @@
 @import 'partials/variable';
 @import 'partials/font';
+@import 'partials/mixin';
 
 @import 'partials/global';
 @import 'partials/override';
 
-@import 'partials/mixin';
 
-@import 'partials/header';
 @import 'partials/footer';
+
+@import 'partials/sidebar';
+@import 'partials/list';
+
+@import 'partials/content';
+@import 'partials/comment';

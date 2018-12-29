@@ -1,0 +1,90 @@
+.comments-area {
+	margin: 64px 0 48px;
+}
+
+.comments-title {
+	font-size: 20px;
+	margin: 0;
+	i {
+		font-size: 1.6em;
+		position: relative;
+		top: 4px;
+		margin: 0 4px 0 0;
+	}
+}
+
+.comment-list {
+	padding: 0;
+	margin: 16px 0 24px;
+	list-style: none;
+	> li {
+		padding: 16px;
+		background-color: $white;
+		border: 1px solid $grey;
+		border-top: 3px solid $blue;
+		margin: 0 0 16px;
+		.comment-author {
+			display: block;
+			margin: 0 0 4px;
+			img {
+				border-radius: 50em;
+				margin: 0 8px 0 0;
+				display: inline-block;
+			}
+			.fn, .says {
+				@extend .ci-text;
+				font-size: 14px;
+			}
+		}
+		.comment-metadata {
+			font-size: 12px;
+			margin: 0 0 8px;
+			a {
+				color: $black;
+			}
+		}
+		> .comment-body {
+				position: relative;
+				.comment-content {
+					padding: 16px;
+					background-color: $grey;
+					p {
+						margin: 0 0 16px;
+						font-size: 14px;
+						&:last-child {
+							margin-bottom: 0;
+						}
+					}
+				}
+		}
+		.reply {
+			font-size: 12px;
+			position: absolute;
+			bottom: 4px;
+			right: 8px;
+			z-index: 1;
+		}
+		.children {
+			margin: 8px 0 0 0;
+			list-style: none;
+			background-color: $white;
+			padding: 16px;
+			border: 1px solid $grey;
+			.comment-content {
+				p {
+					font-size: 14px;
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+.comment-respond {
+	margin: 40px 0 0;
+	.comment-reply-title {
+		font-size: 20px;
+	}
+}

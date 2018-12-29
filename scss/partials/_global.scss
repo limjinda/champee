@@ -1,0 +1,95 @@
+a {
+	color: $blue;
+	&:hover {
+		text-decoration: none;
+		color: $black;
+	}
+}
+
+.short-dashed {
+	width: 80px;
+	height: 1px;
+	background-color: $grey;
+	margin: 16px auto 24px;
+	@media #{$sm} {
+		margin: 16px auto 32px;
+	}
+}
+
+.social-btn { 
+	padding: 6px 6px 5px;
+	background-color: $grey;
+	line-height: 1;
+	display: inline-block;
+	border-radius: 50em;
+	&.facebook {
+		@include social-btn(#3b5998);
+	}
+	&.twitter {
+		@include social-btn(#1da1f2);
+	}
+	&.instagram {
+		@include social-btn(#5851db);
+	}
+	&.github {
+		@include social-btn(#333);
+	}
+	&.linkedin {
+		@include social-btn(#0077b5);
+	}
+	i {
+		display: inline-block;
+		color: $white;
+	}
+}
+
+.required {
+	color: #bf3c5c;
+}
+
+.control-label {
+	@extend .ci-text;
+	margin: 0 0 4px;
+	display: block;
+	font-size: 14px;
+	color: $coal;
+	.required {
+		margin-left: 4px;
+	}
+}
+
+.form-control {
+	font-size: 14px;
+	border: 1px solid darken($grey, 10%);
+	border-radius: 2px;
+	outline: 0 !important;
+	box-shadow: none !important;
+	&:focus,
+	&:active {
+		border: 1px solid $blue;
+	}
+}
+
+textarea.form-control {
+	resize: vertical;
+	height: 120px;
+}
+
+.blue-button {
+	@extend .ci-text;
+	color: $white;
+	background-color: $blue;
+	border: 1px solid darken($blue, 5%);
+	border-bottom: 3px solid darken($blue, 5%);
+	border-radius: 4px;
+	padding: 8px 24px 7px;
+	letter-spacing: 0.5px;
+	cursor: pointer;
+	outline: 0 !important;
+	&:hover {
+		position: relative;
+		top: 1px;
+		border-bottom: 2px solid darken($blue, 5%);
+		background-color: darken($blue, 5%);
+	}
+}

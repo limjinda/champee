@@ -1,4 +1,4 @@
-# WordPress Theme prototype
+# Champee (จำปี)
 
 ![Screenshot](screenshot.png)
 

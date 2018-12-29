@@ -1,0 +1,28 @@
+.footer {
+	.footer-wrapper {
+		width: 100%;
+		padding: 16px 0;
+		border-top: 1px solid #ececec;
+		p {
+			display: block;
+			font-size: 12px;
+			line-height: 1.6;
+			margin: 0 0 4px;
+			@media #{$md} {
+				margin: 0;	
+			}
+		}
+	}
+	.first-col {
+		text-align: center;
+		@media #{$md} {
+			text-align: left;			
+		}
+	}
+	.last-col {
+		text-align: center;
+		@media #{$md} {
+			text-align: right;
+		}
+	}
+}
