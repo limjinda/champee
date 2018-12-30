@@ -74,7 +74,6 @@
 		@media #{$lg} {
 			text-align: left;
 			padding: 0 0 0 32px;
-			// padding: 0 0 0 16px;
 		}
 		li {
 			@extend .ci-text;
@@ -88,7 +87,7 @@
 			}
 			@media #{$lg} {
 				display: block;
-				margin: 0 0 4px;
+				margin: 0 0 6px;
 			}
 			&:last-child {
 				margin-right: 0;
