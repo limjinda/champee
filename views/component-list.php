@@ -13,16 +13,14 @@
 				</figure>
 			</li>
 		<?php endwhile; endif; ?>
-
-		<!-- pagination -->
-		<div class="pagination-block">
-			<div class="pagination-col text-right">
-				<?php previous_posts_link( __('ย้อนกลับ', 'jindatheme') ) ?>
-			</div>
-			<div class="pagination-col">
-				<?php next_posts_link( __('หน้าถัดไป', 'jindatheme') ) ?>
-			</div>
-		</div>
-		
 	</ul>
+	<!-- pagination -->
+	<div class="pagination-block">
+		<div class="pagination-col text-right">
+			<?php previous_posts_link( __('ย้อนกลับ', 'jindatheme') ) ?>
+		</div>
+		<div class="pagination-col">
+			<?php next_posts_link( __('หน้าถัดไป', 'jindatheme') ) ?>
+		</div>
+	</div>
 </section>
