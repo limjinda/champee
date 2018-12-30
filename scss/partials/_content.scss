@@ -1,11 +1,9 @@
 .main { 
 	position: relative;
 	padding: 8px 0 0;
+	margin: 0;
 	@media #{$lg} {
-		margin: 24px 0 0;
 		padding: 0;
-	}
-	@media #{$xl} {
 		margin: 40px 0 0;
 	}
 	&:before {
@@ -68,16 +66,22 @@
 }
 
 .entry-title {
-	font-size: 28px;
+	font-size: 20px;
 	margin: 0 0 12px;
+	@media #{$md} {
+		font-size: 28px;
+	}
 }
 
 .entry-meta {
 	margin: 0 0 32px;
 	display: block;
 	line-height: 1.5;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: normal;
+	@media #{$md} {
+		font-size: 14px;
+	}
 }
 
 .entry-content {
@@ -109,6 +113,7 @@
 		}
 	}
 	figure {
+		max-width: 100%;
 		&.aligncenter {
 			display: block;
 			margin: auto;
@@ -161,13 +166,19 @@
 	blockquote {
 		@extend .ci-text;
 		margin: 24px auto;
-		font-size: 18px;
+		font-size: 16px;
 		padding: 8px 0 4px 16px;
 		border-left: 3px solid $coal;
-		p {
+		@media #{$md} {
 			font-size: 18px;
+		}
+		p {
+			font-size: 16px;
 			color: $coal;
 			margin: 0;
+			@media #{$md} {
+				font-size: 18px;
+			}
 		}
 	}
 	pre {
@@ -185,10 +196,13 @@
 body.single-format-quote {
 	.entry-content {
 		background-color: $white;
-		padding: 48px;
+		padding: 32px;
 		margin: 64px 0;
 		text-align: center;
 		position: relative;
+		@media #{$lg} {
+			padding: 48px;
+		}
 		&:before {
 			position: absolute;
 			content: " “ ";

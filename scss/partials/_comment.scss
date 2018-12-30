@@ -1,5 +1,8 @@
 .comments-area {
-	margin: 64px 0 48px;
+	margin: 32px 0 48px;
+	@media #{$lg} {
+		margin: 64px 0 48px;
+	}
 }
 
 .comments-title {
@@ -83,7 +86,10 @@
 }
 
 .comment-respond {
-	margin: 40px 0 0;
+	@media #{$lg} {
+		border-top: 1px solid $grey;
+		padding: 32px 0 0;
+	}
 	.comment-reply-title {
 		font-size: 20px;
 	}
