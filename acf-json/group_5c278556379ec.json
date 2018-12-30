@@ -254,6 +254,44 @@
             "toolbar": "basic",
             "media_upload": 0,
             "delay": 0
+        },
+        {
+            "key": "field_5c28467e23ba6",
+            "label": "Header Scripts",
+            "name": "header_scripts",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
+        },
+        {
+            "key": "field_5c28469623ba7",
+            "label": "Body Scripts",
+            "name": "body_scripts",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "maxlength": "",
+            "rows": 4,
+            "new_lines": ""
         }
     ],
     "location": [
@@ -273,5 +311,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1546095495
+    "modified": 1546143395
 }
