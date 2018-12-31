@@ -73,7 +73,7 @@ gulp.task('javascript', () => {
 		.src([
 			'./js/vendor/modernizr-3.6.0.min.js', 
 			'./node_modules/picturefill/dist/picturefill.js',
-			'./node_modules/blazy/blazy.js',
+			'./node_modules/lazyload/lazyload.js',
 			'./node_modules/jquery-stickit/build/jquery.stickit.min.js',
 			'./js/main.js'
 		])

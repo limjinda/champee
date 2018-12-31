@@ -12,7 +12,6 @@
   "author": "Jirayu Limjinda <jir4yu.l@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "blazy": "^1.8.2",
     "bootstrap": "^4.2.1",
     "flexibility": "^2.0.1",
     "gulp": "=3.9.1",
@@ -29,6 +28,7 @@
     "gulp-uglify-es": "^1.0.4",
     "gulp-watch": "^5.0.1",
     "jquery-stickit": "^0.2.62",
+    "lazyload": "^2.0.0-beta.2",
     "picturefill": "^3.0.3",
     "run-sequence": "^2.2.0"
   },

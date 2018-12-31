@@ -4,7 +4,7 @@
 			<li class="post-item">
 				<figure>
 					<a href="<?php the_permalink(); ?>" class="cover-wrapper" title="<?php the_title(); ?>">
-						<img data-src="<?php echo has_post_thumbnail() ? the_post_thumbnail_url('grid') : 'https://www.placehold.it/600x450' ?>" class="img-fluid blazy" alt="post image" />
+						<img data-src="<?php echo has_post_thumbnail() ? the_post_thumbnail_url('grid') : 'https://www.placehold.it/600x450' ?>" class="img-fluid lazyload" alt="post image" />
 					</a>
 					<figcaption>
 						<h3 class="post-title"><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title() ?></a></h3>
