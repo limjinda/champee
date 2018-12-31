@@ -22,4 +22,6 @@ jQuery(document).ready(function(){
 		});
 	}
 
+	var bLazy = new Blazy();
+
 })

@@ -15,6 +15,7 @@ const livereload = require('gulp-livereload');
 const shell = require('gulp-shell');
 const concatCSS = require('gulp-concat-css');
 const clean = require('gulp-clean');
+const webp = require('gulp-webp');
 
 const banner = [
 	'/**',
@@ -71,6 +72,8 @@ gulp.task('javascript', () => {
 	return gulp
 		.src([
 			'./js/vendor/modernizr-3.6.0.min.js', 
+			'./node_modules/picturefill/dist/picturefill.js',
+			'./node_modules/blazy/blazy.js',
 			'./node_modules/jquery-stickit/build/jquery.stickit.min.js',
 			'./js/main.js'
 		])
@@ -102,6 +105,16 @@ gulp.task('images', () => {
 		.pipe(gulp.dest('./img'));
 });
 
+gulp.task('webp', () => {
+	return gulp
+		.src([
+			'./img/**/*.jpg', 
+			'./img/**/*.png'
+		])
+		.pipe(webp())
+		.pipe(gulp.dest('./img'));
+});
+
 /**
  * Task - Library SCSS
  * Compile vendor scss file into plain CSS file
@@ -124,8 +137,7 @@ gulp.task('lib-scss', () => {
 gulp.task('lib-css', () => {
 	return gulp
 		.src([
-			'./css/bootstrap.min.css',
-			// './node_modules/magnific-popup/dist/magnific-popup.css'
+			'./css/bootstrap.min.css'
 		])
 		.pipe(concatCSS('vendor.css'))
 		.pipe(gulp.dest('./css/'));
@@ -158,7 +170,7 @@ gulp.task('watch', () => {
 	gulp.watch(['./**/*.php'], () => runSequence('php'));
 });
 
-gulp.task('default', ['scss', 'combine-vendor-style', 'javascript', 'images', 'watch']);
+gulp.task('default', ['scss', 'combine-vendor-style', 'javascript', 'images', 'webp', 'watch']);
 gulp.task('build-lib-css', () => {
 	runSequence('lib-scss', 'lib-css', 'lib-clean');
 });
