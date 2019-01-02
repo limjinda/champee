@@ -126,6 +126,15 @@
 			float: right;
 			margin: 4px 0 4px 24px;
 		}
+		&.gallery-item {
+			@media #{$lg} {
+				flex: 0 0 32%;
+				margin: 0 2% 0 0;
+				&:nth-child(3n) {
+					margin-right: 0;
+				}
+			}
+		}
 		figcaption {
 			display: block;
 			margin: 8px 0;
@@ -190,6 +199,13 @@
 		border-radius: 0;
 		overflow: auto;
 		white-space: pre-wrap;
+	}
+	.gallery {
+		@media #{$lg} {
+			display: flex;
+			align-items: flex-start;
+			flex-wrap: wrap;
+		}
 	}
 }
 
