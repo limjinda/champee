@@ -127,7 +127,7 @@
 			margin: 4px 0 4px 24px;
 		}
 		&.gallery-item {
-			@media #{$lg} {
+			@media #{$md} {
 				flex: 0 0 32%;
 				margin: 0 2% 0 0;
 				&:nth-child(3n) {
@@ -201,7 +201,7 @@
 		white-space: pre-wrap;
 	}
 	.gallery {
-		@media #{$lg} {
+		@media #{$md} {
 			display: flex;
 			align-items: flex-start;
 			flex-wrap: wrap;
