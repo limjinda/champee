@@ -154,12 +154,16 @@
 			margin: auto;
 		}
 		&.alignleft {
-			margin: 8px 24px 8px 0;
-			float: left;
+			@media #{$md} {
+				margin: 8px 24px 8px 0;
+				float: left;
+			}
 		}
 		&.alignright {
-			float: right;
-			margin: 8px 0 8px 24px;
+			@media #{$md} {
+				float: right;
+				margin: 8px 0 8px 24px;
+			}
 		}
 	}
 	iframe,
