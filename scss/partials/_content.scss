@@ -119,12 +119,16 @@
 			margin: auto;
 		}
 		&.alignleft {
-			margin: 4px 24px 4px 0;
-			float: left;
+			@media #{$md} {
+				margin: 4px 24px 4px 0;
+				float: left;
+			}
 		}
 		&.alignright {
-			float: right;
-			margin: 4px 0 4px 24px;
+			@media #{$md} {
+				float: right;
+				margin: 4px 0 4px 24px;
+			}
 		}
 		&.gallery-item {
 			@media #{$md} {
