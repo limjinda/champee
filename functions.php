@@ -49,13 +49,13 @@ function wp_theme_register_script() {
 	 * Enqueue stylesheet that generated from gulp
 	 * first is vendor, second is your style.css
 	 */
-	wp_enqueue_style('champee-style', get_stylesheet_uri(), array(), '1.1.1');
+	wp_enqueue_style('champee-style', get_stylesheet_uri(), array(), '1.1.2');
 	
 	/**
 	 * Register js script file(js/client.js) 
 	 * dependency on jQuery, and place this before close body tag
 	 */
-	wp_register_script('champee-client', get_theme_file_uri('/js/clients.js'), array('jquery'), '1.1.1', true);
+	wp_register_script('champee-client', get_theme_file_uri('/js/clients.js'), array('jquery'), '1.1.2', true);
 
 	/**
 	 * Uncomment if you want to pass an php variebles to js-script
