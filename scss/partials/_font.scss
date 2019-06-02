@@ -1,19 +1,19 @@
 @font-face {
-  font-family: 'k2d';
-  src: url('fonts/k2d-regular.woff2') format('woff2'),
-       url('fonts/k2d-regular.woff') format('woff'),
-       url('fonts/k2d-regular.svg#k2dregular') format('svg');
+  font-family: 'bai_jamjuree';
+  src: url('fonts/baijamjuree-regular.woff2') format('woff2'),
+  url('fonts/baijamjuree-regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+
 }
 
 @font-face {
-  font-family: 'k2d';
-  src: url('fonts/k2d-semibold.woff2') format('woff2'),
-       url('fonts/k2d-semibold.woff') format('woff'),
-       url('fonts/k2d-semibold.svg#k2dsemibold') format('svg');
+  font-family: 'bai_jamjuree';
+  src: url('fonts/baijamjuree-semibold.woff2') format('woff2'),
+  url('fonts/baijamjuree-semibold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
+
 }
 
 @font-face {
@@ -78,9 +78,9 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
 	font-weight: bold;
-	font-family: 'k2d', arial;
+	font-family: 'bai_jamjuree', arial;
 }
 
 .ci-text {
-  font-family: 'k2d', arial; 
+  font-family: 'bai_jamjuree', arial; 
 }

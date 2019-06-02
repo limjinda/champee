@@ -9,7 +9,7 @@
 		<?php if (have_posts()) : while(have_posts()) : the_post(); ?>
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 		<h4 class="entry-meta">
-			<span class="date"><?php _e('เขียนเมื่อ', 'jindatheme') ?> <?php echo get_the_date('d/m/Y'); ?></span>
+			<span class="date"><?php _e('เขียนเมื่อ', 'jindatheme') ?> <?php echo get_the_date('H:s, d/m/Y'); ?></span>
 			<span class="categories">
 				<?php _e('หมวดหมู่', 'jindatheme') ?> 
 				<?php echo '<a href="'. esc_url(get_category_link($categories[0]->term_id)) .'" title="'. esc_html($categories[0]->name) .'">'. esc_html($categories[0]->name) .'</a> '; ?>
