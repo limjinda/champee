@@ -38,6 +38,7 @@
 					line-height: 1.4;
 					margin: 0 0 4px;
 					font-size: 16px;
+					word-break: break-word;
 					@media #{$sm} {
 						font-size: 20px;
 					}
